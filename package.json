@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack"
+    "start": "rimraf public && mkdir public && cp index.html public/ && webpack-dev-server --inline",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,9 @@
   },
   "homepage": "https://github.com/howdy39/study-webpack-v3#readme",
   "devDependencies": {
-    "webpack": "^3.10.0"
+    "rimraf": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
     "jquery": "^3.3.1"
