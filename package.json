@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rimraf public && mkdir public && cp index.html public/ && webpack-dev-server --inline",
+    "start2": "rimraf public && mkdir public && cp index.html public/ && webpack -w & live-server public",
     "build": "webpack"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/howdy39/study-webpack-v3#readme",
   "devDependencies": {
+    "live-server": "^1.2.0",
     "rimraf": "^2.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
